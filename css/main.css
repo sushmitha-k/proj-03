@@ -1,0 +1,137 @@
+
+*, *::after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 10px 10px 10px;
+}
+
+/* video */
+
+.video {
+	position: relative;
+	overflow: hidden;
+}
+
+/* progress bar */
+
+progress[value] {
+	cursor: pointer;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+	border: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: salmon;
+}
+
+#progress {
+	height: 3px;
+	width: 99.6%;
+	display:block;
+	bottom: 45px;
+	position: absolute;
+	z-index: 2;
+}
+
+#video-container:hover #progress-bar {
+	transform: translateY(-25px);
+	-webkit-transform: translateY(-25px);
+  -o-transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+}
+
+/* buttons */
+
+button {
+  border: none;
+	background-color: transparent;
+	padding: 0;
+	display: inline;
+}
+
+button:focus {
+  outline: none;
+}
+
+.flex-container-1 {
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	justify-content: flex-start;
+}
+
+.flex-container-2 {
+	width: 84%;
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	justify-content: flex-end;
+}
+
+#playpause {
+	margin-right: 20px;
+	margin-left: 15px;
+}
+
+#mute {
+	margin-right: 20px;
+}
+
+#fs {
+	margin-right: 15px;
+}
+
+#time-display {
+	padding-top: 5px;
+}
+
+/* control bar */
+
+#controls {
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	display: none;
+	color: #fff;
+	width: 100%;
+	height: 30px;
+}
+
+#video-container:hover #controls {
+	opacity: .9;
+	transform: translateY(-45px);
+	-webkit-transform: translateY(-45px);
+  -o-transform: translateY(-45px);
+  -moz-transform: translateY(-45px);
+  -ms-transform: translateY(-45px);
+}
+
+/* transcript */
+
+.clear {
+	clear: both;
+}
+
+.highlight {
+	color: slategrey;
+	background-color: #ffd9c9;
+}
+
+#transcript {
+	margin-top: 30px;
+	line-height: 1.8;
+	text-align: left;
+}
